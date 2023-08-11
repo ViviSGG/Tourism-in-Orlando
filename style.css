@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #555555;
+}
+
+header {
+    display: flex;
+    height: 16vh;
+    background-color: rgba(0, 0, 0, 60);
+    justify-content: center;
+    align-items: center;
+}
+
+.header-box {
+    display: flex;
+    width: 90vw;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family: "Roboto";
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    width: 44vw;
+    border: 2px solid red;
+    justify-content: space-between;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+.box1 {
+    display: flex;
+    align-items: center;
+}
+
+.welcome-img {
+    background-image: url('./assets/orlando.png');
+    background-size: 100% 100%;
+    width: 60vw;
+    height: 70vh;
+}
+
+.box-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 70vh;
+    background-color: white;
+}
+
+fieldset {
+    width: 30vw;
+    padding: 2vw;
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 700;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#email, #senha {
+    height: 50px;
+    border-radius: 5px;
+    border: #E8E8E8 1px solid;
+}
+
+label {
+    font-size: 16px;
+}
+
+.box-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+form a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+span {
+    color: #2B6CB0;
+}
+
+button {
+    display: flex;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-entrar {
+    background-color: #0057FF;
+    color: white;
+    font-size: 16px;
+}
+
+.button-google {
+    background-color: #1A202C;
+    color: white;
+    font-size: 16px;
+}
+
+.button-google img {
+    margin-right: 8px;
+}
+
+footer {
+    display: flex;
+    height: 16vh;
+    background-color: rgba(0, 0, 0, 60);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Roboto";
+}
