@@ -10,18 +10,17 @@ body {
 
 header {
     display: flex;
-    height: 16vh;
-    background-color: rgba(0, 0, 0, 60);
+    height: 12vh;
+    background: rgba(0, 0, 0, 0.60);
     justify-content: center;
     align-items: center;
 }
 
 .header-box {
     display: flex;
-    width: 90vw;
+    width: 84vw;
     justify-content: space-between;
     align-items: center;
-    color: white;
     font-family: "Roboto";
 }
 
@@ -31,6 +30,11 @@ ul {
     width: 44vw;
     border: 2px solid red;
     justify-content: space-between;
+}
+
+header h3 {
+    font-size: 16px;
+    color: white;
 }
 
 header a {
@@ -44,27 +48,32 @@ header a {
 }
 
 .welcome-img {
-    background-image: url('./assets/orlando.png');
+    background-image: url('./assets/orlando-lago-lucerna.jpg');
     background-size: 100% 100%;
     width: 60vw;
-    height: 70vh;
+    height: 74vh;
 }
 
 .box-form {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40vw;
-    height: 70vh;
+    width: 42vw;
+    height: 74vh;
     background-color: white;
 }
 
 fieldset {
-    width: 30vw;
+    width: 28vw;
     padding: 2vw;
     font-family: "Roboto";
+    border-radius: 5px;
+}
+
+legend {
     font-size: 20px;
-    font-weight: 700;
+    text-align: center;
+    padding: 0 10px;
 }
 
 form {
@@ -74,7 +83,7 @@ form {
 }
 
 #email, #senha {
-    height: 50px;
+    height: 46px;
     border-radius: 5px;
     border: #E8E8E8 1px solid;
 }
@@ -98,9 +107,9 @@ span {
     color: #2B6CB0;
 }
 
-button {
+.box1 button {
     display: flex;
-    height: 50px;
+    height: 46px;
     border-radius: 5px;
     border: none;
     align-items: center;
@@ -123,10 +132,56 @@ button {
     margin-right: 8px;
 }
 
+.box2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 60%);
+    color: white;
+    padding: 12vh 4vw;
+    gap: 20px;
+    font-family: "Roboto";
+}
+
+h1 {
+    font-size: 32px;
+}
+
+.box2 p {
+    font-size: 20px;
+    width: 60vw;
+    text-align: center;
+    line-height: 28px;
+}
+
+.box3 {
+    display: flex;
+    justify-content: center;
+}
+
+.box3 section {
+    display: flex;
+    width: 33.3vw;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.guia {
+    background-color: #0040BD;
+}
+
+.gastronomia {
+    background-color: #0085FF;
+}
+
+.compras {
+    background-color: #B15D5D;
+}
+
 footer {
     display: flex;
     height: 16vh;
-    background-color: rgba(0, 0, 0, 60);
+    background-color: rgba(0, 0, 0, 60%);
     justify-content: center;
     align-items: center;
     color: white;
