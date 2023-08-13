@@ -8,6 +8,10 @@ body {
     background-color: #555555;
 }
 
+.no-desktop {
+    display: none;
+}
+
 header {
     display: flex;
     height: 12vh;
@@ -28,7 +32,6 @@ ul {
     display: flex;
     list-style: none;
     width: 44vw;
-    border: 2px solid red;
     justify-content: space-between;
 }
 
@@ -50,22 +53,22 @@ header a {
 .welcome-img {
     background-image: url('./assets/orlando-lago-lucerna.jpg');
     background-size: 100% 100%;
-    width: 60vw;
-    height: 74vh;
+    width: 68vw;
+    height: 80vh;
 }
 
 .box-form {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 42vw;
-    height: 74vh;
+    width: 32vw;
+    height: 80vh;
     background-color: white;
 }
 
 fieldset {
     width: 28vw;
-    padding: 2vw;
+    padding: 5vh 2vw;
     font-family: "Roboto";
     border-radius: 5px;
 }
@@ -79,13 +82,14 @@ legend {
 form {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 3vh;
 }
 
 #email, #senha {
     height: 46px;
     border-radius: 5px;
     border: #E8E8E8 1px solid;
+    padding: 0 10px;
 }
 
 label {
@@ -138,13 +142,14 @@ span {
     align-items: center;
     background-color: rgba(0, 0, 0, 60%);
     color: white;
-    padding: 12vh 4vw;
-    gap: 20px;
+    padding: 12vh 0;
+    gap: 26px;
     font-family: "Roboto";
 }
 
 h1 {
     font-size: 32px;
+    line-height: 44px;
 }
 
 .box2 p {
@@ -156,26 +161,278 @@ h1 {
 
 .box3 {
     display: flex;
-    justify-content: center;
-}
-
-.box3 section {
-    display: flex;
-    width: 33.3vw;
-    justify-content: space-around;
-    align-items: center;
 }
 
 .guia {
+    display: flex;
+    width: 33vw;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    font-family: "Roboto";
     background-color: #0040BD;
 }
 
 .gastronomia {
+    display: flex;
+    width: 34vw;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    font-family: "Roboto";
     background-color: #0085FF;
 }
 
 .compras {
+    display: flex;
+    width: 33vw;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    font-family: "Roboto";
     background-color: #B15D5D;
+}
+
+.box3 div { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box3 h3 {
+    font-size: 20px;
+    margin-bottom: 3vh;
+}
+
+.box3 button {
+    width: 104px;
+    height: 38px;
+    border-radius: 30px;
+    border: 1px solid white;
+}
+
+.guia button{
+    background-color: #0040BD;
+    color: white;
+    font-size: 16px;
+}
+
+.gastronomia button{
+    background-color: #0085FF;
+    color: white;
+    font-size: 16px;
+}
+
+.compras button{
+    background-color: #B15D5D;
+    color: white;
+    font-size: 16px;
+}
+
+.box3 img {
+    margin-top: 4vh;
+    height: 34vh;
+    position: relative;
+    top: 4px;
+}
+
+.box4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 60%);
+    color: white;
+    font-family: "Roboto";
+}
+
+.div-pontos {
+    display: flex;
+    width: 94vw;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.box4 h2 {
+    border-bottom: 2px solid white;
+    margin: 4vh 0 2vh 0;
+    padding: 12px;
+}
+
+.ponto1 {
+    background-image: linear-gradient(to bottom, #13131f00, #13131F), url('https://ilovetrip.com.br/wp-content/uploads/pontos-turisticos-de-orlando-sea-world.png');
+    background-size: 100% 100%;
+    width: 430px;
+    height: 38vh;
+    margin-top: 4vh;
+    position: relative;
+}
+
+.ponto1:hover {
+    background-image: url('https://ilovetrip.com.br/wp-content/uploads/pontos-turisticos-de-orlando-sea-world.png');
+}
+
+.ponto1 div {
+    position: absolute;
+    bottom: 0;
+    padding: 12px;
+}
+
+.ponto2 {
+    background-image: linear-gradient(to bottom, #13131f00, #13131F), url('https://ilovetrip.com.br/wp-content/uploads/pontos-turisticos-de-orlando-ripleys-1.jpg.webp');
+    background-size: 100% 100%;
+    width: 430px;
+    height: 38vh;
+    margin-top: 4vh;
+    position: relative;
+}
+
+.ponto2:hover {
+    background-image: url('https://ilovetrip.com.br/wp-content/uploads/pontos-turisticos-de-orlando-ripleys-1.jpg.webp');
+}
+
+.ponto2 div {
+    position: absolute;
+    bottom: 0;
+    padding: 12px;
+}
+
+.ponto3 {
+    background-image: linear-gradient(to bottom, #13131f00, #13131F), url('https://ilovetrip.com.br/wp-content/uploads/pontos-turisticos-de-orlando-wonderworks.jpg.webp');
+    background-size: 100% 100%;
+    width: 430px;
+    height: 38vh;
+    margin-top: 4vh;
+    position: relative;
+}
+
+.ponto3:hover {
+    background-image: url('https://ilovetrip.com.br/wp-content/uploads/pontos-turisticos-de-orlando-wonderworks.jpg.webp');
+}
+
+.ponto3 div {
+    position: absolute;
+    bottom: 0;
+    padding: 12px;
+}
+
+.ponto4 {
+    background-image: linear-gradient(to bottom, #13131f00, #13131F), url('https://ilovetrip.com.br/wp-content/uploads/pontos-turisticos-de-orlando-kennedy-space-center.jpg.webp');
+    background-size: 100% 100%;
+    width: 430px;
+    height: 38vh;
+    margin-top: 4vh;
+    position: relative;
+}
+
+.ponto4:hover {
+    background-image: url('https://ilovetrip.com.br/wp-content/uploads/pontos-turisticos-de-orlando-kennedy-space-center.jpg.webp');
+}
+
+.ponto4 div {
+    position: absolute;
+    bottom: 0;
+    padding: 12px;
+}
+
+.ponto5 {
+    background-image: linear-gradient(to bottom, #13131f00, #13131F), url('https://ilovetrip.com.br/wp-content/uploads/pontos-turisticos-de-orlando-legoland.jpg.webp');
+    background-size: 100% 100%;
+    width: 430px;
+    height: 38vh;
+    margin-top: 4vh;
+    position: relative;
+}
+
+.ponto5:hover {
+    background-image: url('https://ilovetrip.com.br/wp-content/uploads/pontos-turisticos-de-orlando-legoland.jpg.webp');
+}
+
+.ponto5 div {
+    position: absolute;
+    bottom: 0;
+    padding: 12px;
+}
+
+.ponto6 {
+    background-image: linear-gradient(to bottom, #13131f00, #13131F), url('https://ilovetrip.com.br/wp-content/uploads/pontos-turisticos-de-orlando-ice-bar-1.jpg.webp');
+    background-size: 100% 100%;
+    width: 430px;
+    height: 38vh;
+    margin-top: 4vh;
+    position: relative;
+}
+
+.ponto6:hover {
+    background-image: url('https://ilovetrip.com.br/wp-content/uploads/pontos-turisticos-de-orlando-ice-bar-1.jpg.webp');
+}
+
+.ponto6 div {
+    position: absolute;
+    bottom: 0;
+    padding: 12px;
+}
+
+.ponto7 {
+    background-image: linear-gradient(to bottom, #13131f00, #13131F), url('https://ilovetrip.com.br/wp-content/uploads/pontos-turisticos-de-orlando-eye.jpg.webp');
+    background-size: 100% 100%;
+    width: 430px;
+    height: 38vh;
+    margin-top: 4vh;
+    position: relative;
+}
+
+.ponto7:hover {
+    background-image: url('https://ilovetrip.com.br/wp-content/uploads/pontos-turisticos-de-orlando-eye.jpg.webp');
+}
+
+.ponto7 div {
+    position: absolute;
+    bottom: 0;
+    padding: 12px;
+}
+
+.ponto8 {
+    background-image: linear-gradient(to bottom, #13131f00, #13131F), url('https://ilovetrip.com.br/wp-content/uploads/pontos-turisticos-de-orlando-merritt.jpg.webp');
+    background-size: 100% 100%;
+    width: 430px;
+    height: 38vh;
+    margin-top: 4vh;
+    position: relative;
+}
+
+.ponto8:hover {
+    background-image: url('https://ilovetrip.com.br/wp-content/uploads/pontos-turisticos-de-orlando-merritt.jpg.webp');
+}
+
+.ponto8 div {
+    position: absolute;
+    bottom: 0;
+    padding: 12px;
+}
+
+.ponto9 {
+    background-image: linear-gradient(to bottom, #13131f00, #13131F), url('https://ilovetrip.com.br/wp-content/uploads/pontos-turisticos-de-orlando-disney.jpg.webp');
+    background-size: 100% 100%;
+    width: 430px;
+    height: 38vh;
+    margin-top: 4vh;
+    position: relative;
+}
+.ponto9:hover {
+    background-image: url('https://ilovetrip.com.br/wp-content/uploads/pontos-turisticos-de-orlando-disney.jpg.webp');
+}
+
+.ponto9 div {
+    position: absolute;
+    bottom: 0;
+    padding: 12px;
+}
+
+.div-pontos h3 {
+    margin-bottom: 1vh;
 }
 
 footer {
@@ -186,4 +443,151 @@ footer {
     align-items: center;
     color: white;
     font-family: "Roboto";
+    text-align: center;
+}
+
+@media (max-width:1050px) {
+
+    ul {
+        width: 50vw;
+    }
+
+    .box1 {
+        flex-direction: column;
+    }
+
+    .welcome-img {
+        background-image: url('./assets/orlando-lago-lucerna.jpg');
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 80vh;
+    }
+
+    .box-form {
+        width: 100vw;
+        height: 80vh;
+    }
+
+    fieldset {
+        padding: 4vh 4vw;
+        width: 46vw;
+    }
+
+    .box3 {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .guia {
+        width: 100vw;
+    }
+    
+    .gastronomia {
+        width: 100vw;
+    }
+    
+    .compras {
+        width: 100vw;
+    }
+
+    .box2 p {
+        width: 80vw;
+    } 
+}
+
+@media (max-width:800px) {
+
+    .no-mobile {
+        display: none;
+    }
+
+    .no-desktop{
+        display: flex;
+        width: 28px;
+        height: 28px;
+    }
+
+    .welcome-img {
+        height: 60vh;
+    }
+
+    .box-form {
+        height: 84vh;
+    }
+
+    fieldset {
+        width: 68vw;
+    }
+
+    .box2 p {
+        width: 90vw;
+    } 
+}
+
+@media (max-width:480px) {
+
+    .no-mobile {
+        display: none;
+    }
+
+    .no-desktop{
+        display: flex;
+        width: 26px;
+        height: 26px;
+    }
+
+    .welcome-img {
+        height: 48vh;
+    }
+
+    fieldset {
+        width: 86vw;
+    }
+
+    form {
+        gap: 16px;
+    }
+
+    .box2 p {
+        font-size: 16px;
+        width: 84vw;
+    }
+
+    label {
+        font-size: 15px;
+    }
+    
+    form a {
+        font-size: 15px;
+    }
+
+    .box3 h3 {
+        font-size: 18px;
+    }
+    
+    .box3 button {
+        width: 90px;
+    }
+    
+    .guia button{
+        font-size: 14px;
+    }
+    
+    .gastronomia button{
+        font-size: 14px;
+    }
+    
+    .compras button{
+        font-size: 14px;
+    }
+
+    .box4 h2 {
+       font-size: 20px;
+    }
+
+    footer p {
+        width: 80vw;
+        font-size: 14px;
+    } 
 }
