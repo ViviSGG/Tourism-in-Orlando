@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-pontos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <title>Orlando Tourism</title>
+    <title>Museu Wonderworks</title>
 </head>
 <body>
     <header>
@@ -17,8 +17,8 @@
             </figure>
             <nav class="no-mobile">
                 <ul>
-                    <li><a href="#">Ínicio</a></li>
-                    <li><a href="#categorias">Categorias</a></li>
+                    <li><a href="./index.html">Ínicio</a></li>
+                    <li><a href="./index.html#categorias">Categorias</a></li>
                     <li><a href="#pontos-turisticos">Pontos turisticos</a></li>
                     <li><a href="#sobre">Sobre</a></li>
                 </ul>
@@ -28,40 +28,21 @@
     </header>
     <main>
         <section class="box1">
-            <section class="welcome-img"></section>
-        </section>
-        <section class="box2" id="categorias">
-            <h1>Orlando City</h1>
-            <p>Tanto a Disney quanto a Universal dominam o mercado turístico local com 9 diferentes parques, isso sem falar de todas as experiências de compras de marcas, gastronomia e vida noturna disponíveis.</p>
-            <p>Venha Conhecer alguns deles!</p>
-        </section>
-        <section class="box3">
-            <section class="guia">
+            <h1>A casa de cabeça para baixo: o Museu Wonderworks</h1>
+            <section class="container-div">
                 <div>
-                    <h3>Guias turísticos</h3>
-                    <a href="#"><button>Ver mais</button></a>
+                    <figure>
+                        <img src="https://ilovetrip.com.br/wp-content/uploads/pontos-turisticos-de-orlando-wonderworks.jpg.webp" alt="">
+                    </figure>
                 </div>
-                <section class="img-turismo">
-                    <img src="./assets/turista2.png" alt="">
-                </section>
-            </section>
-            <section class="gastronomia">
                 <div>
-                    <h3>Gastronomia</h3>
-                    <a href="#"><button>Ver mais</button></a>
+                    <p>O Wonderworks Museus é uma das melhores atrações turísticas de Orlando. Assim como o Ripley’s Believe It or Not, a construção é um tanto inusitada. Diferente do Ripley’s, que mais parece um prédio torto, o Wonderworks é uma residência completamente de cabeça para baixo.</p>
+                    <p>Além de museu, o local também funciona como uma espécie de parque de diversões. A ideia do parque é justamente essa, combinar atividades culturais e educativas com entretenimento, desafiando a mente e instigando a imaginação de seus visitantes.</p>
+                    <p>A própria direção do Wonderworks faz o local parecer mais interessante com a história criada sobre a história do empreendimento.</p>
+                    <P>De acordo com os donos do estabelecimento, antes de se tornar um museu interativo, este ponto turístico de Orlando era um laboratório secreto que operava no Triângulo das Bermudas, área que é conhecida por fazer desaparecer aviões e naufragar navios.</P>
+                    <p>Os cientistas que estavam trabalhando dentro deste laboratório tentavam criar algo novo. Com o comando do professor Wonder, estes profissionais fizeram o primeiro tornado dentro de um laboratório. A criação do furacão deu tão certo que ele foi parar no meio de Orlando – e de ponta-cabeça.</p>
+                    <p>Entrar no Wonderwork pode ser um pouco caro, os valores chegam a cerca de US$34 e 25 US$ para crianças. A diversão no entanto é garantida e vale a pena reservar uma quantia para visitar o local.</p>
                 </div>
-                <section class="img-gastronomia">
-                    <img src="./assets/chefe2.png" alt="">
-                </section>
-            </section>
-            <section class="compras">
-                <div>
-                    <h3>Compras</h3>
-                    <a href="#"><button>Ver mais</button></a>
-                </div>
-                <section class="img-compras">
-                    <img src="./assets/compras2.png" alt="">
-                </section>
             </section>
         </section>
         <section class="box4" id="pontos-turisticos">
@@ -75,7 +56,7 @@
                         </div>
                     </section>
                 </a>
-                <a href="./pontos2.html">
+                <a href="./ponto2.html">
                     <section class="ponto2">
                         <div>
                             <h3>Ripley’s Believe It Or Not (Acredite se quiser)</h3>
@@ -141,34 +122,8 @@
                 </a>
             </div>
         </section>
-        <section class="box5">
-            <h2>Increva-se! Fique por dentro das novidades</h2>
-            <fieldset>
-                <form autocomplete="on">
-                    <div>
-                        <label for="nome">Nome: </label>
-                        <input type="text" name="" id="nome">
-                    </div>
-                    <div>
-                        <label for="email">Email: </label>
-                        <input type="email" name="" id="email">
-                    </div>
-                    <div>
-                        <input type="checkbox" name="" id="checkbox">
-                        <label for="checkbox">Desejo receber emails promocionais.</label>
-                    </div>
-                    <input type="button" value="Inscrever" id="button" onclick="mensagem()">
-                </form>
-            </fieldset>
-        </section>
-    </main>
     <footer id="sobre">
         <p>Copyright © 2023 Lívia Gomes. Todos os direitos reservados.</p>
     </footer>
-    <script>
-        function mensagem() {
-            confirm("Email cadastrado com sucesso!");
-        }
-    </script>
 </body>
 </html>

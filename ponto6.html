@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-pontos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <title>Orlando Tourism</title>
+    <title>Ice Bar</title>
 </head>
 <body>
     <header>
@@ -17,8 +17,8 @@
             </figure>
             <nav class="no-mobile">
                 <ul>
-                    <li><a href="#">Ínicio</a></li>
-                    <li><a href="#categorias">Categorias</a></li>
+                    <li><a href="./index.html">Ínicio</a></li>
+                    <li><a href="./index.html#categorias">Categorias</a></li>
                     <li><a href="#pontos-turisticos">Pontos turisticos</a></li>
                     <li><a href="#sobre">Sobre</a></li>
                 </ul>
@@ -28,40 +28,19 @@
     </header>
     <main>
         <section class="box1">
-            <section class="welcome-img"></section>
-        </section>
-        <section class="box2" id="categorias">
-            <h1>Orlando City</h1>
-            <p>Tanto a Disney quanto a Universal dominam o mercado turístico local com 9 diferentes parques, isso sem falar de todas as experiências de compras de marcas, gastronomia e vida noturna disponíveis.</p>
-            <p>Venha Conhecer alguns deles!</p>
-        </section>
-        <section class="box3">
-            <section class="guia">
+            <h1>Ice Bar: uma experiência gelada na terra do sol</h1>
+            <section class="container-div">
                 <div>
-                    <h3>Guias turísticos</h3>
-                    <a href="#"><button>Ver mais</button></a>
+                    <figure>
+                        <img src="https://ilovetrip.com.br/wp-content/uploads/pontos-turisticos-de-orlando-ice-bar-1.jpg.webp" alt="">
+                    </figure>
                 </div>
-                <section class="img-turismo">
-                    <img src="./assets/turista2.png" alt="">
-                </section>
-            </section>
-            <section class="gastronomia">
                 <div>
-                    <h3>Gastronomia</h3>
-                    <a href="#"><button>Ver mais</button></a>
+                    <p>Você já deve ter ido em algum outro Ice Bar em outros lugares, a diferença do Ice Bar de Orlando é que ele é o maior do mundo, com cerca de 70 toneladas de gelo esculpidas a mão. Muitos brasileiros se preocupam em ir nesses lugares por conta da roupa, uma vez que lá dentro as temperaturas não passam de 3 graus negativos.</p>    
+                    <p>No entanto, ao chegar no local você será recebido pela Princesa do Gelo que o conduzirá em sua jornada em direção ao Ártico, fornecendo todo tipo de roupa que você precisará para enfrentar as baixas temperaturas: capas térmicas e luvas.</p>
+                    <p>Passada esta etapa você entrará realmente no bar e verá fabulosas esculturas gelo, momento ideal para tirar uma foto e postar nas mídias sociais. Além de funcionar como um Bar, a casa também opera como boate no que eles chamam de Fire Lounge.</p>
+                    <p>Dependendo do ticket que você comprar, a balada não tem custo adicional para os visitantes do bar e conta com DJ ao vivo e bebidas especiais todas as noites. A entrada no bar incluindo luvas e capas térmicas custa US$14.95. Caso o visitante queira pode optar por um casaco de pele pagando mais US$10.</p>
                 </div>
-                <section class="img-gastronomia">
-                    <img src="./assets/chefe2.png" alt="">
-                </section>
-            </section>
-            <section class="compras">
-                <div>
-                    <h3>Compras</h3>
-                    <a href="#"><button>Ver mais</button></a>
-                </div>
-                <section class="img-compras">
-                    <img src="./assets/compras2.png" alt="">
-                </section>
             </section>
         </section>
         <section class="box4" id="pontos-turisticos">
@@ -75,7 +54,7 @@
                         </div>
                     </section>
                 </a>
-                <a href="./pontos2.html">
+                <a href="./ponto2.html">
                     <section class="ponto2">
                         <div>
                             <h3>Ripley’s Believe It Or Not (Acredite se quiser)</h3>
@@ -141,34 +120,8 @@
                 </a>
             </div>
         </section>
-        <section class="box5">
-            <h2>Increva-se! Fique por dentro das novidades</h2>
-            <fieldset>
-                <form autocomplete="on">
-                    <div>
-                        <label for="nome">Nome: </label>
-                        <input type="text" name="" id="nome">
-                    </div>
-                    <div>
-                        <label for="email">Email: </label>
-                        <input type="email" name="" id="email">
-                    </div>
-                    <div>
-                        <input type="checkbox" name="" id="checkbox">
-                        <label for="checkbox">Desejo receber emails promocionais.</label>
-                    </div>
-                    <input type="button" value="Inscrever" id="button" onclick="mensagem()">
-                </form>
-            </fieldset>
-        </section>
-    </main>
     <footer id="sobre">
         <p>Copyright © 2023 Lívia Gomes. Todos os direitos reservados.</p>
     </footer>
-    <script>
-        function mensagem() {
-            confirm("Email cadastrado com sucesso!");
-        }
-    </script>
 </body>
 </html>

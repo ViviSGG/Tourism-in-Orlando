@@ -57,7 +57,7 @@ h1 {
     font-size: 28px;
     font-family: "Roboto";
     color: white;
-    margin: 4vh 0;
+    margin: 4vh 0 8vh 0;
     padding: 12px;
     text-align: center;
     width: 80vw;
@@ -291,61 +291,6 @@ figure img {
     margin-bottom: 1vh;
 }
 
-.box5 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 60%);
-    padding: 6vh 0;
-}
-
-.box5 div {
-    display: flex;
-    align-items: center;
-}
-
-fieldset {
-    border: none;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-    gap: 22px;
-    margin: 4vh 0 8vh 0;
-    color: white;
-    font-family: "Roboto";
-}
-
-#nome, #email {
-    background-color: rgba(0, 0, 0, 0);
-    width: 100%;
-    height: 34px;
-    border: 1px solid white;
-    border-radius: 5px;
-    color: white;
-    padding: 0 10px;
-    margin-left: 10px;
-}
-
-#checkbox {
-    background-color: rgba(0, 0, 0, 0);
-    border: 1px solid white;
-    width: 16px;
-    height: 16px;
-    margin-right: 8px;
-}
-
-#button {
-    background-color: rgba(0, 0, 0, 0);
-    border: 1px solid white;
-    height: 40px;
-    width: 100%;
-    border-radius: 5px;
-    color: white;
-}
-
 footer {
     display: flex;
     height: 14vh;
@@ -356,46 +301,6 @@ footer {
     font-family: "Roboto";
     text-align: center;
     border-top: 0.2px solid white;
-}
-
-@media (max-width:1050px) {
-
-    ul {
-        width: 50vw;
-    }
-
-    .box1 {
-        flex-direction: column;
-    }
-
-    .welcome-img {
-        background-image: url('./assets/orlando-lago-lucerna.jpg');
-        background-size: cover;
-        background-position: center;
-        width: 100vw;
-        height: 80vh;
-    }
-
-    .box3 {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .guia {
-        width: 100vw;
-    }
-    
-    .gastronomia {
-        width: 100vw;
-    }
-    
-    .compras {
-        width: 100vw;
-    }
-
-    .box2 p {
-        width: 80vw;
-    } 
 }
 
 @media (max-width:800px) {
@@ -410,13 +315,23 @@ footer {
         height: 28px;
     }
 
-    .welcome-img {
-        height: 60vh;
+    .container-div{
+        flex-direction: column;
     }
 
-    .box2 p {
-        width: 90vw;
-    } 
+    .container-div figure img {
+        width: 80vw;
+        margin-top: 2vh;
+    }
+    
+    .box1 p {
+        width: 80vw;
+        margin-top: 2vh;
+    }
+
+    h1 {
+        margin: 3vh 0;
+    }
 }
 
 @media (max-width:490px) {
@@ -431,35 +346,6 @@ footer {
         height: 26px;
     }
 
-    .welcome-img {
-        height: 48vh;
-    }
-
-    .box2 p {
-        font-size: 16px;
-        width: 84vw;
-    }
-
-    .box3 h3 {
-        font-size: 18px;
-    }
-    
-    .box3 button {
-        width: 90px;
-    }
-    
-    .guia button{
-        font-size: 14px;
-    }
-    
-    .gastronomia button{
-        font-size: 14px;
-    }
-    
-    .compras button{
-        font-size: 14px;
-    }
-
     .ponto1, .ponto2, .ponto3, .ponto4, .ponto5, .ponto6, .ponto7, .ponto8, .ponto9 {
         width: 330px;
         height: 36vh;
@@ -467,16 +353,6 @@ footer {
 
     .box4 h2 {
        font-size: 20px;
-    }
-
-    .box5 h2 {
-        text-align: center;
-        font-size: 20px;
-        width: 80vw;
-    }
-    
-    form {
-        width: 300px;
     }
 
     footer p {
